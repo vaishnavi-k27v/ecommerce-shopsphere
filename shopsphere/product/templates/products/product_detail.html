@@ -1,0 +1,57 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Product Details</title>
+</head>
+<body>
+
+<h1>{{ product.name }}</h1>
+
+<p><strong>Description:</strong> {{ product.description }}</p>
+
+<p><strong>Price:</strong> ₹{{ product.price }}</p>
+
+<p><strong>Stock:</strong> {{ product.stock_quantity }}</p>
+
+<br>
+
+<!-- Add to Cart Button -->
+<!-- <a href="/cart/add/{{ product.id }}/">
+    <button>Add to Cart</button>
+</a>
+
+<br><br>
+
+<a href="/">Back to Products</a>
+
+</body>
+</html> --> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Product Details</title>
+</head>
+
+<body>
+
+<h1>{{ product.name }}</h1>
+
+<p>Description: {{ product.description }}</p>
+
+<p>Price: ₹{{ product.price }}</p>
+
+<p>Stock: {{ product.stock_quantity }}</p>
+
+<br>
+
+<a href="/cart/add/{{ product.id }}/">
+<button>Add to Cart</button>
+</a>
+
+<br><br>
+
+<a href="/">Back to Products</a>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Cart</title>
+</head>
+
+<body>
+
+<h1>Your Cart</h1>
+
+{% for item in items %}
+
+<h3>{{ item.product.name }}</h3>
+
+<p>Price: ₹{{ item.product.price }}</p>
+
+<p>Quantity: {{ item.quantity }}</p>
+
+<hr>
+
+{% endfor %}
+
+<a href="/orders/create/">Place Order</a>
+
+</body>
+</html>

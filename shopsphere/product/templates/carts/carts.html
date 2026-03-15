@@ -1,0 +1,8 @@
+<h1>Cart</h1>
+
+{% for item in items %}
+
+<p>{{ item.product.name }}</p>
+<p>Quantity: {{ item.quantity }}</p>
+
+{% endfor %}
